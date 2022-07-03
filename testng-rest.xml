@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite_RestAPI" verbose="1" parallel="none"
+	thread-count="3">
+	<test name="Test_Get">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.ng.restassured.tests.Test_Get"/>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test_Name">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.ng.restassured.tests.Test_Name"/>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test_Post">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.ng.restassured.tests.Test_Post"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
